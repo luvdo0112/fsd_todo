@@ -16,11 +16,14 @@ const GlobalStyle = createGlobalStyle`
     body{
         display: flex;
         justify-content: center;
+
+        background-color: #E1E0F2;
     }
 
     body > div{
         max-width:37.5rem;
         width: 100%;
+        height:100vh;
 
         background-color: #fff;
     }
