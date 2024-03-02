@@ -1,14 +1,15 @@
-import TodoCard from "../TodoCard";
 import * as S from "./TodoListSection.styled";
+import TodoCard from "../TodoCard";
+import { useTodoContext } from "../../shared/context/TodoContext";
 
 export function TodoListSection() {
+  const { state } = useTodoContext();
+
   return (
     <S.Wrapper>
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
+      {state.todoList.map(({ title, checked }) => (
+        <TodoCard title={title} checked={checked} />
+      ))}
     </S.Wrapper>
   );
 }

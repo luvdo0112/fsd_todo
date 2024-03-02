@@ -1,12 +1,17 @@
+import { Todo, useTodoContext } from "../../shared/context/TodoContext";
 import * as S from "./TodoCard.styled";
 
-export default function TodoCard() {
+export default function TodoCard({ title, checked }: Todo) {
+  const { dispatch } = useTodoContext();
   return (
     <S.Wrapper>
-      <S.TodoInfoSection>
-        <S.TodoTitle>Sprint meeting</S.TodoTitle>
-        <S.TodoTime>09:00 am - 11:00 am</S.TodoTime>
-      </S.TodoInfoSection>
+      <S.TodoTitle $checked={checked}>{title}</S.TodoTitle>
+      <S.RadioBtn
+        $checked={checked}
+        onClick={() =>
+          dispatch({ type: "CHANGE_LIST", payload: { title: title } })
+        }
+      />
     </S.Wrapper>
   );
 }

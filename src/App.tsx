@@ -1,11 +1,14 @@
 import Todo from "./pages/Todo";
+import { TodoProvider } from "./shared/context/TodoContext";
 import { Layout } from "./widgets";
 
 function App() {
   return (
-    <Layout>
-      <Todo />
-    </Layout>
+    <TodoProvider>
+      <Layout>
+        <Todo />
+      </Layout>
+    </TodoProvider>
   );
 }
 
