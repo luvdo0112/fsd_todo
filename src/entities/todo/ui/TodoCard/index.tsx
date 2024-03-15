@@ -1,4 +1,5 @@
-import { Todo, useTodoContext } from "../../shared/context/TodoContext";
+import { useTodoContext } from "@/shared/context/TodoProvider";
+import { Todo } from "@/shared/types/index.";
 import * as S from "./TodoCard.styled";
 
 export default function TodoCard({ title, checked }: Todo) {

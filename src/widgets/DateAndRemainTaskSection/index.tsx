@@ -1,5 +1,6 @@
-import { useTodoContext } from "../../shared/context/TodoContext";
-import { getDate } from "../../shared/getDate";
+import { useTodoContext } from "@/shared/context/TodoProvider";
+import { getDate } from "@/shared/util";
+
 import * as S from "./DateAndRemaiTaskSection.styled";
 
 export function DateAndRemainTaskSection() {

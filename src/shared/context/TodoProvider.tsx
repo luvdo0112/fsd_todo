@@ -1,9 +1,5 @@
 import React, { createContext, useReducer, useContext, ReactNode } from "react";
-
-export interface Todo {
-  title: string;
-  checked: boolean;
-}
+import { Todo } from "../types/index.";
 
 interface TodoContextState {
   todoList: Todo[];

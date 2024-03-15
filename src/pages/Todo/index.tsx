@@ -1,7 +1,6 @@
-import { DateAndRemainTaskSection } from "../../widgets/DateAndRemainTaskSection";
-import { TodoListSection } from "../../widgets/TodoListSection";
+import { DateAndRemainTaskSection, TodoListSection } from "@/widgets";
 
-export default function Todo() {
+export default function TodoPage() {
   return (
     <>
       <DateAndRemainTaskSection />
