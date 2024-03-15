@@ -91,4 +91,30 @@
 1. 폴더구조는 대규모 애플리케이션에서 빛을 발한다고 생각한다. 이 아키텍처를 사용했을 때 강력한 점은 아마 표준화되어 있다는점이 아닐까
 2. 아직 몇 가지 부분이 애매모호하다. features, entities, widgets 이 폴더들을 확실히 구분할 수 있는 연습이 더 필요할 것 같다. (eslint의 도움도 받을 수 있다.)
 
+## 3/15 수정
+
+```
+ - src
+    - app
+        - styles
+        - index.tsx
+    - pages
+        - Todo
+        - index.tsx
+    - widgets
+        - Layout
+        - DateAndRemainTaskSection
+        - TodoListSection
+        - index.ts
+    - entities
+        - todo
+            - ui
+                -TodoCard
+        - index.ts
+    - shared
+        - context
+        - types
+        - util
+```
+
 [참고: todo-app](https://github.com/feature-sliced/examples/tree/master/todo-app)
