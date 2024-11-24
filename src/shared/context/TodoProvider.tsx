@@ -46,6 +46,7 @@ export const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
       { title: "Eating", checked: false },
       { title: "Studying", checked: false },
       { title: "Solving algorithm", checked: false },
+      { title: "Hello world", checked: false },
     ],
   });
 
